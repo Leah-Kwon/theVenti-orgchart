@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizational Chart</title>
+    <style>
+        /* Base styles for the organizational chart */
+        .node { padding: 10px; }
+        .leah, .faye, .braun { background-color: #f0f0f0; } /* white-tone backgrounds */
+        .part1, .part2 { height: auto; }
+        .tooltip { display: none; }
+        .node:hover .tooltip, .node:focus .tooltip { display: block; }
+        /* Media queries for mobile optimization */
+        @media (max-width: 768px) {
+            .node { font-size: smaller; }
+        }
+    </style>
+</head>
+<body>
+    <div class="org-chart">
+        <div class="node leah" tabindex="0">Leah
+            <div class="tooltip">Duties: Lead Development</div>
+        </div>
+        <div class="node faye" tabindex="0">Faye
+            <div class="tooltip">Duties: Marketing Coordinator</div>
+        </div>
+        <div class="node braun" tabindex="0">Braun
+            <div class="tooltip">Duties: Sales Manager</div>
+        </div>
+        <div class="part1">
+            <!-- Additional code for Part 1 -->
+        </div>
+        <div class="part2">
+            <!-- Additional code for Part 2 -->
+        </div>
+    </div>
+</body>
+</html>
